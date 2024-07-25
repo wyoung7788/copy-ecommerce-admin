@@ -1,10 +1,10 @@
-//unique to a route
-import { Button } from "@nextui-org/button";
-import { getSession, signIn, signOut } from "next-auth/react";
-import LoginScreen from "components/LoginScreen";
-export default async function Home(){
-  return (
+import LoginForm from "components/LoginForm";
 
-    <LoginScreen></LoginScreen>
-  )
+export default function Home(){
+  return(
+    <div>
+      <h1 className="text-center"> Log in here</h1>
+      <LoginForm/>
+    </div>
+  );
 }
