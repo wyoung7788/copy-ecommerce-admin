@@ -9,5 +9,5 @@ export async function doSocialLogin(formData){
 }
 
 export async function Logout(){
-    await signOut({ redirectTo: "/"});
+    await signOut({ redirectTo: "/home"});
 }
