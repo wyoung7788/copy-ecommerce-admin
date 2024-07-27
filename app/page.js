@@ -1,12 +1,15 @@
 import LoginForm from "components/LoginForm";
-import Nav from "components/Nav";
 import Menu from "components/Menu";
-export default function Home(){
+const HomePage = async () => {
   return(
-    <div>
+    <div className="">
       <Menu/>
-      <h1 className="text-center"> Log in here</h1>
+      <div className="text-right top-10 right-10">
+      <h1 className=""> Log in here</h1>
       <LoginForm/>
+      </div>
     </div>
   );
 }
+
+export default HomePage;
